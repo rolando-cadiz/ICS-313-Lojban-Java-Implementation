@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Tokenize {
     public static List<String> tokenize(String input) {
-        // Normalize Windows newlines to \n
+        // newlines to \n
         input = input.replace("\r\n", "\n").replace("\r", "\n");
 
         List<String> out = new ArrayList<>();
