@@ -2,6 +2,13 @@
 A tiny interpreter for a Lojban-flavored predicate calculus.
 It tokenizes, validates, and evaluates a sequence of i-statements with a small set of built-ins, basic facts, variables, and lists.
 
+# Some features not implemented:
+### fatci doesn’t store facts
+- prints > fatci => true but does not add a fact.
+### cmavo rules not implemented
+- Only facts are supported (… lo steni as the third argument).
+- A non-empty third argument prints > cmavo (rules not implemented) => false.
+
 # How it works...
 ### User enters a Lojban program as one or more i-statements (possibly across multiple lines).
 
@@ -213,4 +220,4 @@ A data holder storing an encoded value and the token index it was parsed at.
 - **Constructor:** `EncodedAndPos(String enc, int pos)`  
   Store an encoded value with the parser position.
 
-> *(No other methods; fields are accessed directly.)*
+
